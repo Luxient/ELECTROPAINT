@@ -1,0 +1,351 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1000; /* Ensure the header is on top */
+}
+
+header .logo {
+    display: flex;
+    align-items: center; /* Vertically center the logo */
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Vertically center the hamburger button */
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    display: block;
+    content: '';
+    position: relative;
+    transition: all 0.3s;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+.hero {
+    background-image: url('https://lh3.googleusercontent.com/pw/AP1GczMepfJowUdvgmGkcT1o3VNYuSTcIP42H2JtSFiNeikUuL3KlEQ2CYMnHsXD6l66o5ZeT9KS0fvgH6xZMAGolAgkfa0xcswNF_JuSQZHemAiwlR9ABYlPU1wgFG47-a_ZMbALIFC-44CFNd881mxb8y9I3iK1oNTWi_-hmyFT4RvdyL0GnJxLJVdUpHAlWe2JhoZAWHfpmPsADFUaDsgejhuHUFsnJaWcb-nQleIJi-h2SFBC3qnbh4kKPTWTCSQ5ieRPrB3TqfLTRz8RHHGf5pJo1AN1JE6FDnvUDH7mKQCOzrqvpIPRz4WiLpuuUBlHTWmUTiQ56awk_IlfbhrWEYLyZJ8AhXZrNrNmOVWqORCmtVd5nK5nGj_mr2Q18COlmPTODxufeuHt6YS4vu8-Nj8XFBDO9M4f8p6u_dzC5JDBpmbwG5pH41FFU6DTaEAfALVLZmyOMM_y1iaHSfvNJSfR_YF2EVniow8R9cPg_0zvWi0WI6H-OzN0AvtFY9P0OQ4kIHYsK3ooyDt8NqqDAE2rBgwap0kms-A43NvEVqlmBq0_20GjqFQ3oEmzIkJH6q3iLkH4eHwjirXLfT4zQxCNaP0GVKajOfreujMr_x2RL7z8ameBC41Q8AuX1eQPv_S-4YRqjNsI4pY8Yz1izG4-BxlJFGZy2atix_lUwX0MVDprE4Q4FaRpWjPq-xyBJ4iAMQ-tsxHCk6suraA7Khd3M6cj0Fmh1vXaYYMCnMjxm3RkI3hPY9LxQzKYuf1SnSA8-_CXcbi5T-DvQHJ1ERHGmx8wB9YSy9XAm18uG1pbJ6InDLpEtE4qv2V2va6PbjI-7UUdl4HVt53judbHUjP55-YzS_SlpQXpU2f-2BnBFjGrqB9ZvjwWRjrcet5TJFiLAw7VIL58TmiZFsye-A8Wxbo8XgjuhFaMuYpu4t3d6hBQMjXyozuHk4Gm_3g6rVYPMaOtmv1X0XMkt5lUBVydSaiZfH6=w638-h638-s-no?authuser=0');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.about-content .get-in-touch {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.highlight {
+    color: green;
+    font-weight: bold;
+}
+
+.services {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-item {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: calc(33.333% - 20px);
+    height: 350px; /* Set a fixed height for the service cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-item img {
+    width: 100%;
+    height: 150px; /* Set a fixed height for the images */
+    object-fit: cover; /* Make sure images cover the space without stretching */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em; /* Ensure the heading is the same size */
+    font-weight: bold;
+    color: #333;
+}
+
+.service-item p {
+    flex-grow: 1; /* Make the paragraph take up available space */
+    font-size: 1em; /* Ensure the paragraph text is the same size */
+    color: #666;
+}
+
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form label {
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Overlay navigation menu */
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999; /* Ensure overlay is above everything */
+    padding: 20px; /* Add padding to ensure spacing on sides */
+}
+
+.nav-overlay ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-overlay ul li {
+    margin: 20px 0;
+}
+
+.nav-overlay ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-overlay_visible {
+        display: flex;
+    }
+
+    .service-item {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-toggle {
+        display: none; /* Hide the toggle button on desktop view */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-content {
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .about-content h2 {
+        text-align: center;
+    }
+
+    .about-content p {
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+
+    .contact form {
+        max-width: 90%;
+    }
+}

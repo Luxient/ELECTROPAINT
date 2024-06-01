@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroPaint</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="ElectroPaint Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>ElectroPaint</h1>
+            <p>Combining Electrical Expertise with Artistic Flair</p>
+            <a href="#services" class="btn">View Services</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2><span class="highlight">ELECTROPAINT</span></h2>
+            <h2>Combining electrical work with professional painting solutions</h2>
+            <p>ElectroPaint is a creative project in Johannesburg that merges top-notch electrical services with expert painting solutions.</p>
+            <a href="#contact" class="get-in-touch">Get in touch</a>
+        </div>
+        <div class="about-image">
+            <img src="img/about.jpeg" alt="About Us Image">
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <img src="img/wiring.jpeg" alt="Electrical wiring">
+                <h3>Electrical wiring &gt;</h3>
+                <p>Expert electrical wiring solutions for your home or business.</p>
+            </div>
+            <div class="service-item">
+                <img src="img/interior_painting.jpeg" alt="Interior painting">
+                <h3>Interior painting &gt;</h3>
+                <p>Transform your space with our professional interior painting services.</p>
+            </div>
+            <div class="service-item">
+                <img src="img/lighting.jpeg" alt="Lighting installation">
+                <h3>Lighting installation &gt;</h3>
+                <p>Illuminate your surroundings with our expert lighting installations.</p>
+            </div>
+            <div class="service-item">
+                <img src="img/exterior_painting.jpeg" alt="Exterior painting">
+                <h3>Exterior painting &gt;</h3>
+                <p>Elevate your property's curb appeal with our exterior painting services.</p>
+            </div>
+            <div class="service-item">
+                <img src="img/fan.jpeg" alt="Ceiling fan installation">
+                <h3>Ceiling fan installation &gt;</h3>
+                <p>Stay cool and comfortable with our professional ceiling fan installations.</p>
+            </div>
+            <div class="service-item">
+                <img src="img/wallpaper.jpeg" alt="Wallpapering services">
+                <h3>Wallpapering services &gt;</h3>
+                <p>Add style and personality to your walls with our wallpapering services.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="mailto:mthethwajames5@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <label for="consent">
+                <input type="checkbox" id="consent" name="consent" required>
+                I allow this website to store my submission so they can respond to my inquiry.
+            </label>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us at <a href="mailto:mthethwajames5@gmail.com">mthethwajames5@gmail.com</a></p>
+        <p>Location: Johannesburg, GP ZA</p>
+        <p>Hours: Monday to Sunday, 9:00 AM to 10:00 PM</p>
+    </footer>
+
+    <div class="nav-overlay">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
